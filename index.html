@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>First Web Mapping Application</title>
+    <style type="text/css">
+       
+        header {
+            background: #ffffff;
+            height: 80px;
+            background-image: url(images/Header.jpg);
+            background-repeat: no-repeat;
+            background-position:center;
+            text-align:center;
+        }
+        header h1 {
+            margin: 0;
+            padding-top: 15px;
+        }       
+        footer {
+            height: 50px;
+            background-image: url(images/Header.png);
+            background-repeat: no-repeat;
+            background-position:center;
+            width: 100%;
+            
+            text-align: center;
+            padding: 4px 0;
+
+        }    
+        .innertube {
+            margin: 15px; /* Padding for content */
+            font-family:Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            margin-top: 0;
+            
+        }
+            
+        html, body {
+            height: 100%;
+            width: 700px;            
+            padding: 0;
+            margin:0 auto;
+            background-color: black;
+            align-content: center;  
+            vertical-align: middle;
+        }
+
+        #map {
+            height: 80%;
+        }
+    </style>
+
+    <script>
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 30.035781, lng: 31.238962 },
+            zoom: 12
+        });
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=[API-KEY]]&callback=initMap"
+            async defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="innertube">
+            <h1>First Web Mapping Application</h1>
+        </div>
+    </header>
+    <div id="map"></div>      
+    <footer>
+        <div class="innertube">
+            <p>All Copyright Reserved © Mohamed Adel Mohamedy</p>
+        </div>
+    </footer>
+
+</body>
+</html>
